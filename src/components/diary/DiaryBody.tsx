@@ -1,6 +1,9 @@
+import { Button } from "../atoms/button/Button"
 
 export const DiaryBody = () => {
     return (
-        <div>diary body</div>
+        <Button>
+            <div>diary body</div>
+        </Button>
     )
 }

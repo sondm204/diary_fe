@@ -16,7 +16,7 @@ export const AppHeader = React.memo(() => {
         <header className="relative w-full px-6 py-4 shadow-md dark:bg-gray-900 dark:text-white bg-white flex justify-between items-center z-10">
             {/* Logo */}
             <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                <Link to="/">Divido</Link>
+                <Link to="/">Diary</Link>
             </div>
 
             {/* Menu */}
