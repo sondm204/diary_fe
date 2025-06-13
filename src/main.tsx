@@ -25,7 +25,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HeroUIProvider>
-      <RouterProvider router={router} />
+      <main className=" text-foreground bg-background font-inter">
+        <RouterProvider router={router} />
+      </main>
     </HeroUIProvider>
   </StrictMode>,
 )
