@@ -4,7 +4,7 @@ import './index.css'
 import { HomePage } from './pages/HomePage.tsx';
 import { DiaryPage } from './pages/DiaryPage.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ThemeProvider } from 'next-themes';
+import {HeroUIProvider} from "@heroui/react";
 
 
 const router = createBrowserRouter([
@@ -24,8 +24,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <HeroUIProvider>
+      <main className=" text-foreground bg-background font-inter">
+        <RouterProvider router={router} />
+      </main>
+    </HeroUIProvider>
   </StrictMode>,
 )
