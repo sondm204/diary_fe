@@ -7,6 +7,7 @@ import {
     Link,
     Input,
     Avatar,
+    Image
 } from "@heroui/react";
 
 export const AcmeLogo = () => {
@@ -61,11 +62,12 @@ export const AppHeader = React.memo(() => {
     };
 
     return (
-        <Navbar isBordered maxWidth="full">
+        <Navbar isBordered maxWidth="full" className="bg-white dark:bg-gray-800">
             <NavbarContent justify="start">
                 <NavbarBrand>
-                    <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        <Link href="/">Diary</Link>
+                    <div className="flex gap-2 items-end font-bold text-blue-600 dark:text-blue-400">
+                        <Image src="/images/logo.png" alt="logo" width={32} height={32} />
+                        <Link href="/" className="text-2xl">Diary</Link>
                     </div>
                 </NavbarBrand>
             </NavbarContent>

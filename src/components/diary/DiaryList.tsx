@@ -1,5 +1,10 @@
 import { Avatar, Card, CardBody, Chip, Image, Select, SelectItem } from "@heroui/react"
 import styled from "styled-components"
+import { MdSendAndArchive } from "react-icons/md";
+import { FaEye, FaTag, FaTrashAlt } from "react-icons/fa";
+import { IoMdShare } from "react-icons/io";
+import { FaChartBar, FaCommentAlt } from "react-icons/fa";
+
 
 export const DiaryList = () => {
     return (
@@ -59,12 +64,27 @@ export const DiaryList = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-2">
-                                <div className="flex gap-2">
+                            <div className="flex flex-col gap-4 items-end justify-center">
+                                <div className="flex gap-4 items-center">
+                                    <MdSendAndArchive size={25} className="cursor-pointer text-gray-500 hover:text-blue-500" />
+                                    <FaTag size={20} className="cursor-pointer text-gray-500 hover:text-blue-500" />
+                                    <FaTrashAlt size={20} className="cursor-pointer text-gray-500 hover:text-red-500" />
+                                    <FaEye size={25} className="cursor-pointer text-gray-500 hover:text-blue-500" />
                                     <Avatar
                                         size="sm"
                                         src="https://www.shutterstock.com/image-vector/custom-default-profile-picture-icon-260nw-2359133587.jpg"
                                     />
+                                </div>
+                                <div className="flex gap-2 items-center">
+                                    <IoMdShare size={25} className="cursor-pointer text-gray-500 hover:text-blue-500" />
+                                    <div className="flex items-center gap-1">
+                                        <span className="text-sm text-gray-500">0</span>
+                                        <FaCommentAlt size={15} className="text-gray-500" />
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        <span className="text-sm text-gray-500">0</span>
+                                        <FaChartBar size={15} className="text-gray-500" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
