@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage.tsx';
 import { DiaryPage } from './pages/DiaryPage.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import {HeroUIProvider} from "@heroui/react";
+import { ViewPage } from './pages/ViewPage.tsx';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/diary",
     element: <DiaryPage />
+  },
+  {
+    path: "/view",
+    element: <ViewPage />
   }
 ]);
 
