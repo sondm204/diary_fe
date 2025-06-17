@@ -9,7 +9,7 @@ export const ViewSideBar = () => {
     return (
         <ViewSideBarWrapper className="col-span-3 border-l border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 flex flex-col">
             <div className="flex flex-col gap-4">
-                <Card>
+                <Card shadow="lg" className="dark:bg-gray-900 bg-white">
                     <CardBody className="flex flex-col gap-2 p-5">
                         <div className="flex gap-2 items-start text-xl font-bold">
                             <FaRegUser />
@@ -21,7 +21,7 @@ export const ViewSideBar = () => {
                     </CardBody>
                 </Card>
 
-                <Card>
+                <Card shadow="lg" className="dark:bg-gray-900 bg-white">
                     <CardBody className="flex flex-col gap-2 p-5">
                         <div className="flex gap-2 items-start text-xl font-bold">
                             <CiShoppingTag size={25} />
@@ -46,7 +46,7 @@ export const ViewSideBar = () => {
                     </CardBody>
                 </Card>
 
-                <Card>
+                <Card shadow="lg" className="dark:bg-gray-900 bg-white">
                     <CardBody className="flex flex-col gap-2 p-5">
                         <div className="flex gap-2 items-start text-xl font-bold">
                             <MdOutlineDateRange />

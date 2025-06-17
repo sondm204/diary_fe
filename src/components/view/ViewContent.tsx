@@ -16,7 +16,7 @@ export const ViewContent = () => {
             <ViewContentBody className="flex flex-col gap-4 mt-4">
                 <Card
                     shadow="lg"
-                    className="w-full hover:translate-y-[-5px] hover:shadow-2xl !transition-all duration-300 cursor-pointer"
+                    className="w-full hover:translate-y-[-5px] hover:shadow-2xl !transition-all duration-300 cursor-pointer dark:bg-gray-900 bg-white"
                 >
                     <CardHeader className="w-full h-64 p-0 justify-center overflow-hidden">
                         <Image

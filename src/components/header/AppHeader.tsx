@@ -66,7 +66,7 @@ export const AppHeader = React.memo(() => {
             <NavbarContent justify="start">
                 <NavbarBrand>
                     <div className="flex gap-2 items-end font-bold text-blue-600 dark:text-blue-400">
-                        <Link href="/" className="text-lg flex items-center">
+                        <Link href="/diary" className="text-lg flex items-center">
                             <Image src="/images/logo.png" alt="logo" width={50} height={50} />
                             <span className="text-2xl translate-y-3 -translate-x-1">iary</span>
                         </Link>
