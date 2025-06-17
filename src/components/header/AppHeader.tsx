@@ -62,12 +62,14 @@ export const AppHeader = React.memo(() => {
     };
 
     return (
-        <Navbar isBordered maxWidth="full" className="bg-white dark:bg-gray-800">
+        <Navbar isBordered maxWidth="full" className="bg-gray-100 dark:bg-[#282135]">
             <NavbarContent justify="start">
                 <NavbarBrand>
                     <div className="flex gap-2 items-end font-bold text-blue-600 dark:text-blue-400">
-                        <Image src="/images/logo.png" alt="logo" width={32} height={32} />
-                        <Link href="/" className="text-2xl">Diary</Link>
+                        <Link href="/diary" className="text-lg flex items-center">
+                            <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+                            <span className="text-2xl translate-y-3 -translate-x-1">iary</span>
+                        </Link>
                     </div>
                 </NavbarBrand>
             </NavbarContent>
