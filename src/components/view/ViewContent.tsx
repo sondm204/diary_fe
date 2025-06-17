@@ -14,7 +14,10 @@ export const ViewContent = () => {
                 </p>
             </ViewContentHeader>
             <ViewContentBody className="flex flex-col gap-4 mt-4">
-                <Card className="w-full">
+                <Card
+                    shadow="lg"
+                    className="w-full hover:translate-y-[-5px] hover:shadow-2xl !transition-all duration-300 cursor-pointer"
+                >
                     <CardHeader className="w-full h-64 p-0 justify-center overflow-hidden">
                         <Image
                             src="https://media.istockphoto.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?s=612x612&w=0&k=20&c=SEyObHsbBsrd1XZlgEg389VT86BMFKZKfKReKyVPAk4="
